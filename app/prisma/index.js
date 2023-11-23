@@ -1,4 +1,4 @@
-import { PrismaClient } from "@prisma/client/edge.js";
+import { PrismaClient } from "@prisma/client";
 import { withAccelerate } from "@prisma/extension-accelerate";
 
 if (!globalThis.prisma) {
