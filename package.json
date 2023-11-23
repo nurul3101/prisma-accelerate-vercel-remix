@@ -1,0 +1,41 @@
+{
+  "name": "prisma-accelerate-test",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "remix build && npx prisma generate --no-engine",
+    "dev": "npx prisma generate --no-engine && remix dev",
+    "postinstall": "prisma generate --no-engine",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "remix": "2.2.0",
+    "@remix-run/css-bundle": "^2.2.0",
+    "@remix-run/node": "^2.2.0",
+    "@remix-run/react": "^2.2.0",
+    "@remix-run/serve": "^2.2.0",
+    "isbot": "^3.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@vercel/remix": "^2.2.0",
+    "@remix-run/server-runtime": "^2.2.0",
+    "@prisma/client": "^5.6.0",
+    "@prisma/extension-accelerate": "^0.6.2",
+    "prisma": "^5.6.0"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^2.2.0",
+    "@remix-run/eslint-config": "^2.2.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.38.0",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
